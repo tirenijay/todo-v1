@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>To-Do App</title>
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h2>To-Do App</h2>
+        
+        
+    </header>
+
+    <!-- Main Body -->
+    <main>
+        <h3>Welcome to the To-Do app</h3> 
+        <p>If you have questions click the link at the bottom of the page.</p>
+        <hr/>
+        <div class="flexbox">
+            <div class="mainbox">
+                <div class="container">
+                    <h2>To-Do Lists</h2>
+                    <div class="todo-container" id="todo-list">
+                        <p> There are no To-Dos. Kindly add a To-Do.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebox">
+                <div class="container">
+                    <h2 class="text-center">Add To-Do</h2>
+                    <form>
+                        <div class="form-group">
+                            <label>Task:</label><br/>
+                            <input type="text" id="task" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Task Description <em>(Optional)</em>:</label><br/>
+                            <textarea id="taskDesc"></textarea>   
+                        </div>
+                            
+                        <div class="form-group">
+                            <label>Priority:</label>
+                            <select id="priority">
+                                <option value="High">High</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Low">Low</option>
+                            </select>
+                        </div>
+
+                        <button type="button" onclick="addTodo()">Add Todo</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Powered By: Tireni</h2>
+        <h5>Email: <a href="mailto:ogutunde.tireni@gmail.com">ogutunde.tireni@gmail.com</a></h5>
+
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./script.js"></script>
+    
+</body>
+</html>
